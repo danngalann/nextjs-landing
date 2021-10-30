@@ -79,7 +79,7 @@ export default function Awm() {
           spacingY={{ base: 10, md: 32 }}
           spacingX={{ base: 10, md: 24 }}
         >
-          <Box order={{ base: "none", md: 2 }}>
+          <Box order={{ base: 1, md: 2 }}>
             <chakra.h2
               mb={4}
               fontSize={{ base: "2xl", md: "4xl" }}
