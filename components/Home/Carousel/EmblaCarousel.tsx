@@ -9,7 +9,7 @@ const EmblaCarousel = ({ slides }: { slides: any }) => {
     skipSnaps: false,
     loop: true,
     draggable: false,
-    speed: 6,
+    speed: 4,
   });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
