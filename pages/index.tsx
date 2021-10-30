@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Navbar from '../components/Header/Navbar'
-import Carousel from '../components/Home/Carousel/Carousel'
+import Carousel from '../components/Common/Carousel'
+import { media, mediaByIndex } from '../components/Home/Carousel/HomeCarouselMedia'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
-      <Carousel />
+      <Carousel media={media} mediaByIndex={mediaByIndex}/>
     </div>
   )
 }
