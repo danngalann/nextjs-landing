@@ -24,7 +24,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
       pos="absolute"
     >
       <Box
-        shadow="xl"
+        // shadow="xl"
         bg={useColorModeValue("white", "gray.800")}
         px="5%"
         py={30}
@@ -158,7 +158,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                   loading="lazy"
                   placeholder="blur"
                   layout="responsive"
-                  width="20%"
+                  width="40%"
                 />
               ) : (
                 <Image
@@ -166,7 +166,79 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                   src="img/postre.png"
                   placeholder="blur"
                   layout="responsive"
-                  width="20%"
+                  width="40%"
+                />
+              )}
+            </Box>
+          )}
+        </SimpleGrid>
+        <SimpleGrid
+          alignItems="center"
+          columns={{ base: 1, md: 2 }}
+          flexDirection="column-reverse"
+          mb={24}
+          spacingY={{ base: 10, md: 32 }}
+          spacingX={{ base: 10, md: 24 }}
+        >
+          <Box>
+            <Parallax
+              y={[PARALLAX_DISPLACE_VALUE, -PARALLAX_DISPLACE_VALUE]}
+              disabled={isMobile}
+            >
+              <chakra.h2
+                mb={4}
+                fontSize={{ base: "2xl", md: "4xl" }}
+                fontWeight="extrabold"
+                letterSpacing="tight"
+                textAlign={{ base: "center", md: "left" }}
+                color={useColorModeValue("gray.900", "gray.400")}
+                lineHeight={{ md: "shorter" }}
+              >
+                Verduras
+              </chakra.h2>
+              <chakra.p
+                mb={5}
+                textAlign={{ base: "center", sm: "left" }}
+                color={useColorModeValue("gray.600", "gray.400")}
+                fontSize={{ md: "lg" }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita ea impedit similique reprehenderit mollitia, illo
+                necessitatibus temporibus minima voluptas non. Voluptatibus
+                dolorum doloribus, labore voluptate saepe quae adipisci
+                quibusdam. Sint.
+              </chakra.p>
+              <Button
+                w={{ base: "full", sm: "auto" }}
+                size="lg"
+                bg={useColorModeValue("gray.900", "gray.700")}
+                _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
+                color={useColorModeValue("gray.100", "gray.200")}
+                as="a"
+              >
+                Ver Productos
+              </Button>
+            </Parallax>
+          </Box>
+
+          {isMobile ? null : (
+            <Box w="full" h="full" display="flex" justifyContent="center">
+              {lazyImages ? (
+                <Image
+                  alt=""
+                  src="img/verdura.png"
+                  loading="lazy"
+                  placeholder="blur"
+                  layout="responsive"
+                  width="80%"
+                />
+              ) : (
+                <Image
+                  alt=""
+                  src="img/verdura.png"
+                  placeholder="blur"
+                  layout="responsive"
+                  width="80%"
                 />
               )}
             </Box>
