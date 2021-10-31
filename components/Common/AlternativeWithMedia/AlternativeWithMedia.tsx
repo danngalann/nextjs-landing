@@ -135,6 +135,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 loading="lazy"
                 placeholder="blur"
                 layout="responsive"
+                sizes="640 1080 1920"
               />
             ) : (
               <Image
@@ -142,6 +143,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 src="img/carousel/image3.jpg"
                 placeholder="blur"
                 layout="responsive"
+                sizes="640 1080 1920"
               />
             )}
           </Box>
