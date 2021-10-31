@@ -10,7 +10,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-export default function Awm() {
+export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
   return (
     <Flex
       p={{ base: "none", md: 20 }}
@@ -68,7 +68,22 @@ export default function Awm() {
             </Button>
           </Box>
           <Box w="full" h="full" bg={useColorModeValue("gray.200", "gray.700")}>
-            <Image alt="" src="img/carousel/image1.jpg" loading="lazy" />
+            {lazyImages ? (
+              <Image
+                alt=""
+                src="img/carousel/image1.jpg"
+                loading="lazy"
+                placeholder="blur"
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                alt=""
+                src="img/carousel/image1.jpg"
+                placeholder="blur"
+                layout="responsive"
+              />
+            )}
           </Box>
         </SimpleGrid>
         <SimpleGrid
@@ -112,12 +127,23 @@ export default function Awm() {
               Learn More
             </Button>
           </Box>
-          <Box
-            w="full"
-            h="full"
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            <Image alt="" src="img/carousel/image3.jpg" loading="lazy" />
+          <Box w="full" h="full" bg={useColorModeValue("gray.200", "gray.700")}>
+            {lazyImages ? (
+              <Image
+                alt=""
+                src="img/carousel/image3.jpg"
+                loading="lazy"
+                placeholder="blur"
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                alt=""
+                src="img/carousel/image3.jpg"
+                placeholder="blur"
+                layout="responsive"
+              />
+            )}
           </Box>
         </SimpleGrid>
       </Box>

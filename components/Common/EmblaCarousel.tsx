@@ -48,6 +48,7 @@ const EmblaCarousel = ({
                   className={styles.embla_slid_img}
                   src={mediaByIndex(index).src}
                   alt=""
+                  layout="responsive"
                 />
               </div>
             </div>
