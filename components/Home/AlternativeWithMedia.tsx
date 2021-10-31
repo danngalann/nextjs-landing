@@ -50,7 +50,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 textAlign={{ base: "center", md: "left" }}
                 color={useColorModeValue("gray.900", "gray.400")}
                 lineHeight={{ md: "shorter" }}
-                textShadow="2px 0 currentcolor"
               >
                 Carnes
               </chakra.h2>

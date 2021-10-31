@@ -1,6 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
-import { Box, Text, Stack, Button } from "@chakra-ui/react";
+import { Box, Stack, Button } from "@chakra-ui/react";
 
 const MenuItem = ({
   children,
