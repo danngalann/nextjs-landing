@@ -7,10 +7,34 @@ import {
   Flex,
   SimpleGrid,
   useColorModeValue,
-  Image,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import { isMobile } from "react-device-detect";
 import { Parallax } from "react-scroll-parallax";
+
+function SizedImage({
+  src,
+  lazy,
+  width,
+  height,
+}: {
+  src: string;
+  lazy: boolean;
+  width: string;
+  height: string;
+}) {
+  return (
+    <Box width={width} height={height} position="relative">
+      <Image
+        src={src}
+        loading={lazy ? "lazy" : "eager"}
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </Box>
+  );
+}
 
 export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
   const PARALLAX_DISPLACE_VALUE = 30;
@@ -78,24 +102,12 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
           </Box>
           {isMobile ? null : (
             <Box w="full" h="full" display="flex" justifyContent="center">
-              {lazyImages ? (
-                <Image
-                  alt=""
-                  src="img/carne.png"
-                  loading="lazy"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="90%"
-                />
-              ) : (
-                <Image
-                  alt=""
-                  src="img/carne.png"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="90%"
-                />
-              )}
+              <SizedImage
+                src="/img/carne.png"
+                width="35rem"
+                height="35rem"
+                lazy={lazyImages}
+              />
             </Box>
           )}
         </SimpleGrid>
@@ -149,25 +161,19 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
           </Box>
 
           {isMobile ? null : (
-            <Box w="full" h="full" display="flex" justifyContent="center">
-              {lazyImages ? (
-                <Image
-                  alt=""
-                  src="img/postre.png"
-                  loading="lazy"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="40%"
-                />
-              ) : (
-                <Image
-                  alt=""
-                  src="img/postre.png"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="40%"
-                />
-              )}
+            <Box
+              w="full"
+              h="full"
+              display="flex"
+              justifyContent="center"
+              position="relative"
+            >
+              <SizedImage
+                src="/img/postre.png"
+                width="23rem"
+                height="23rem"
+                lazy={lazyImages}
+              />
             </Box>
           )}
         </SimpleGrid>
@@ -221,25 +227,19 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
           </Box>
 
           {isMobile ? null : (
-            <Box w="full" h="full" display="flex" justifyContent="center">
-              {lazyImages ? (
-                <Image
-                  alt=""
-                  src="img/verdura.png"
-                  loading="lazy"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="80%"
-                />
-              ) : (
-                <Image
-                  alt=""
-                  src="img/verdura.png"
-                  placeholder="blur"
-                  layout="responsive"
-                  width="80%"
-                />
-              )}
+            <Box
+              w="80%"
+              h="full"
+              display="flex"
+              justifyContent="center"
+              position="relative"
+            >
+              <SizedImage
+                src="/img/verdura.png"
+                width="30rem"
+                height="30rem"
+                lazy={lazyImages}
+              />
             </Box>
           )}
         </SimpleGrid>
