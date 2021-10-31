@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { Image, chakra, Box } from "@chakra-ui/react";
+import { chakra } from "@chakra-ui/react";
+import Image from "next/image";
 
 const EmblaCarousel = ({
   slides,
@@ -47,14 +48,13 @@ const EmblaCarousel = ({
               paddingLeft="10px"
               key={index}
             >
-              <chakra.div position="relative" overflow="hidden" maxHeight="80vh">
+              <chakra.div position="relative" overflow="hidden" height="80vh">
                 <Image
                   src={mediaByIndex(index).src}
-                  // className={styles.embla__slide__img}
                   alt=""
-                  layout="responsive"
-                  height="auto"
-                  width="100%"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="top"
                 />
               </chakra.div>
             </chakra.div>

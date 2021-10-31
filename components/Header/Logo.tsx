@@ -1,12 +1,20 @@
 import React from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import NextLink from "next/link";
+import Image from "next/image";
 
 export default function Logo(props: object) {
   return (
     <Box {...props}>
       <NextLink href="/">
-        <Image src="img/logo.png" alt="Logo inserte" maxWidth="200px" cursor="pointer"/>
+        <Box cursor="pointer" width="12rem" height="3rem" position="relative">
+          <Image
+            src="/img/logo.png"
+            alt="Logo inserte"
+            layout="fill"
+            objectFit="contain"
+          />
+        </Box>
       </NextLink>
     </Box>
   );

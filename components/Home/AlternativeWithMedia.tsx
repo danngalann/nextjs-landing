@@ -9,8 +9,13 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { isMobile } from "react-device-detect";
 import { Parallax } from "react-scroll-parallax";
+
+import carne from "../../public/img/carne.png";
+import postre from "../../public/img/postre.png";
+import verdura from "../../public/img/verdura.png";
 
 function SizedImage({
   src,
@@ -31,13 +36,33 @@ function SizedImage({
         alt=""
         layout="fill"
         objectFit="contain"
+        sizes="50vw"
       />
     </Box>
   );
 }
 
+function LinkButton({ to, children }: { to: string; children: any }) {
+  return (
+    <Link href={to} passHref>
+      <Button
+        w={{ base: "full", sm: "auto" }}
+        size="lg"
+        bg={useColorModeValue("gray.900", "gray.700")}
+        _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
+        color={useColorModeValue("gray.100", "gray.200")}
+        as="a"
+        aria-label={children}
+        cursor="pointer"
+      >
+        {children}
+      </Button>
+    </Link>
+  );
+}
+
 export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
-  const PARALLAX_DISPLACE_VALUE = 30;
+  const PARALLAX_DISPLACE_VALUE = 40;
 
   return (
     <Flex
@@ -88,22 +113,13 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 impedit ex mollitia inventore culpa beatae, quia dolores officia
                 modi quibusdam! Quasi.
               </chakra.p>
-              <Button
-                w={{ base: "full", sm: "auto" }}
-                size="lg"
-                bg={useColorModeValue("gray.900", "gray.700")}
-                _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
-                color={useColorModeValue("gray.100", "gray.200")}
-                as="a"
-              >
-                Ver Productos
-              </Button>
+              <LinkButton to="#!">Ver Productos</LinkButton>
             </Parallax>
           </Box>
           {isMobile ? null : (
             <Box w="full" h="full" display="flex" justifyContent="center">
               <SizedImage
-                src="/img/carne.png"
+                src={carne.src}
                 width="35rem"
                 height="35rem"
                 lazy={lazyImages}
@@ -147,16 +163,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 dolorum doloribus, labore voluptate saepe quae adipisci
                 quibusdam. Sint.
               </chakra.p>
-              <Button
-                w={{ base: "full", sm: "auto" }}
-                size="lg"
-                bg={useColorModeValue("gray.900", "gray.700")}
-                _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
-                color={useColorModeValue("gray.100", "gray.200")}
-                as="a"
-              >
-                Ver Productos
-              </Button>
+              <LinkButton to="#!">Ver Productos</LinkButton>
             </Parallax>
           </Box>
 
@@ -169,7 +176,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src="/img/postre.png"
+                src={postre.src}
                 width="23rem"
                 height="23rem"
                 lazy={lazyImages}
@@ -213,16 +220,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 dolorum doloribus, labore voluptate saepe quae adipisci
                 quibusdam. Sint.
               </chakra.p>
-              <Button
-                w={{ base: "full", sm: "auto" }}
-                size="lg"
-                bg={useColorModeValue("gray.900", "gray.700")}
-                _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
-                color={useColorModeValue("gray.100", "gray.200")}
-                as="a"
-              >
-                Ver Productos
-              </Button>
+              <LinkButton to="#!">Ver Productos</LinkButton>
             </Parallax>
           </Box>
 
@@ -235,7 +233,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src="/img/verdura.png"
+                src={verdura.src}
                 width="30rem"
                 height="30rem"
                 lazy={lazyImages}
