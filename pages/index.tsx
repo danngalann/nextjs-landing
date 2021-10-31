@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Navbar from '../components/Header/Navbar'
 import Carousel from '../components/Common/Carousel'
 import { media, mediaByIndex } from '../components/Home/Carousel/HomeCarouselMedia'
-import Awm from '../components/Common/AlternativeWithMedia/AlternativeWithMedia'
+import Awm from '../components/Home/AlternativeWithMedia'
 
 const Home: NextPage = () => {
   return (
