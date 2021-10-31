@@ -15,6 +15,7 @@ specifiers:
   react: 17.0.2
   react-device-detect: ^2.1.2
   react-dom: 17.0.2
+  react-scroll-parallax: ^2.4.0
   typescript: 4.4.4
 
 dependencies:
@@ -28,6 +29,7 @@ dependencies:
   react: 17.0.2
   react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-scroll-parallax: 2.4.0_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   '@types/node': 16.11.6
@@ -3675,6 +3677,17 @@ packages:
       tslib: 1.14.1
       use-callback-ref: 1.2.5_74cdfb704b70bfbe5b519e0c4564d995
       use-sidecar: 1.0.5_react@17.0.2
+    dev: false
+
+  /react-scroll-parallax/2.4.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-lFbf2SIEyxyIko/edR8Fx2mnn4T0t2WzLBa4E5ApoGwDsSWS1crL+LjRYtin+f3EV+rmBDzWqqr7vB5GsRpg9Q==}
+    peerDependencies:
+      react: ^16.3.0-0 || >=17.0.1
+      react-dom: ^16.3.0-0 || >=17.0.1
+    dependencies:
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react-server-dom-webpack/0.0.0-experimental-3c4c1c470-20211021_react-dom@17.0.2+react@17.0.2:
