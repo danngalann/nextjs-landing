@@ -33,7 +33,7 @@ const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="/">Inicio</MenuItem>
-        <MenuItem to="/empreas">Empresa</MenuItem>
+        <MenuItem to="/empresa">Empresa</MenuItem>
         <MenuItem to="/productos">Productos</MenuItem>
         <MenuItem to="/contacto">Contacto</MenuItem>
       </Stack>
