@@ -7,6 +7,8 @@ import {
   mediaByIndex,
 } from "../components/Home/Carousel/HomeCarouselMedia";
 import Awm from "../components/Home/AlternativeWithMedia";
+import { Heading, Box } from "@chakra-ui/react";
+import Testimonials from "../components/Home/Testimonials/Testimonials";
 
 const Home: NextPage = () => {
   return (
@@ -19,9 +21,12 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
-      <Carousel media={media} mediaByIndex={mediaByIndex} />
-      <Awm />
+      <Box px={{ base: "none", md: 20 }} pt={10} w="full">
+        <Carousel media={media} mediaByIndex={mediaByIndex} />
+        <Awm />
+        <Heading w="full" textAlign="center">Lo que dicen de nosotros</Heading>
+        <Testimonials />
+      </Box>
     </div>
   );
 };

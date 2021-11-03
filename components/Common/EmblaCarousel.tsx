@@ -55,6 +55,7 @@ const EmblaCarousel = ({
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top"
+                  priority={true}
                 />
               </chakra.div>
             </chakra.div>

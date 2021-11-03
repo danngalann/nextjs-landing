@@ -62,15 +62,13 @@ function LinkButton({ to, children }: { to: string; children: any }) {
 }
 
 export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
-  const PARALLAX_DISPLACE_VALUE = 40;
+  const PARALLAX_DISPLACE_VALUE = 60;
 
   return (
     <Flex
-      p={{ base: "none", md: 20 }}
       w="full"
       justifyContent="center"
       alignItems="center"
-      pos="absolute"
     >
       <Box
         // shadow="xl"

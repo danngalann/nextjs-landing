@@ -8,7 +8,7 @@ const Empresa: NextPage = () => {
       <Head>
         <title>Congelados Inserte - Empresa</title>
       </Head>
-      <Box px={{ base: "none", md: 60 }} pt={10} w="full" textAlign="justify">
+      <Box px={{ base: 8, md: 60 }} pt={10} w="full" textAlign="justify">
         <Box mb={20}>
           <Heading mb={4}>Nuestra empresa</Heading>
           <Text>
