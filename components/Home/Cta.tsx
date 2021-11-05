@@ -48,7 +48,7 @@ export default function Cta() {
             shrink={{ lg: 0 }}
           >
             <Link
-              w={["full", , "auto"]}
+              w={["full", "auto"]}
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
@@ -58,7 +58,7 @@ export default function Cta() {
               fontWeight="bold"
               rounded="md"
               shadow="md"
-              color={useColorModeValue("white")}
+              color="white"
               bg={useColorModeValue("brand.600", "brand.500")}
               _hover={{
                 bg: useColorModeValue("brand.700", "brand.600"),
@@ -67,7 +67,7 @@ export default function Cta() {
               Get started
             </Link>
             <Link
-              w={["full", , "auto"]}
+              w={["full", "auto"]}
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
