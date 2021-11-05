@@ -12,7 +12,7 @@ const Empresa: NextPage = () => {
         <Box mb={20}>
           <Heading mb={4}>Nuestra empresa</Heading>
           <Text>
-            Nuestro equipo humano esta formado por 33 profesionales debidamente
+            Nuestro equipo humano esta formado por profesionales debidamente
             cualificados, donde nos esforzamos a diario para mejorar y conseguir
             la confianza de nuestros clientes. Especializados en el canal Horeca
             (hostelería, restauración y catering), tenemos la mejor selección de

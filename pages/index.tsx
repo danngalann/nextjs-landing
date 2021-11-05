@@ -9,6 +9,7 @@ import {
 import Awm from "../components/Home/AlternativeWithMedia";
 import { Heading, Box } from "@chakra-ui/react";
 import Testimonials from "../components/Home/Testimonials/Testimonials";
+import Cta from "../components/Home/Cta";
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         <Awm />
         <Heading w="full" textAlign="center">Lo que dicen de nosotros</Heading>
         <Testimonials />
+        <Cta />
       </Box>
     </div>
   );
