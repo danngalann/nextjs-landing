@@ -10,6 +10,7 @@ import Awm from "../components/Home/AlternativeWithMedia";
 import { Heading, Box } from "@chakra-ui/react";
 import Testimonials from "../components/Home/Testimonials/Testimonials";
 import Cta from "../components/Home/Cta";
+import Hero from "../components/Home/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -22,10 +23,13 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Box px={{ base: "none", md: 20 }} pt={10} w="full">
-        <Carousel media={media} mediaByIndex={mediaByIndex} />
+      <Hero />
+      <Box px={{ base: "none", md: 20 }} pt={10} w="full" bg={"gray.50"}>
+        {/* <Carousel media={media} mediaByIndex={mediaByIndex} /> */}
         <Awm />
-        <Heading w="full" textAlign="center">Lo que dicen de nosotros</Heading>
+        <Heading w="full" textAlign="center">
+          Lo que dicen de nosotros
+        </Heading>
         <Testimonials />
         <Cta />
       </Box>

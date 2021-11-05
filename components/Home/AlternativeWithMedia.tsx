@@ -72,7 +72,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
     >
       <Box
         // shadow="xl"
-        bg={useColorModeValue("white", "gray.800")}
+        // bg="gray.50"
         px="5%"
         py={30}
         mx="auto"

@@ -16,6 +16,7 @@ specifiers:
   react-device-detect: ^2.1.2
   react-dom: 17.0.2
   react-scroll-parallax: ^2.4.0
+  react-snowfall: ^1.1.0
   sharp: ^0.29.2
   typescript: 4.4.4
 
@@ -31,6 +32,7 @@ dependencies:
   react-device-detect: 2.1.2_react-dom@17.0.2+react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-scroll-parallax: 2.4.0_react-dom@17.0.2+react@17.0.2
+  react-snowfall: 1.1.0_react-dom@17.0.2+react@17.0.2
   sharp: 0.29.2
 
 devDependencies:
@@ -3912,6 +3914,17 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-snowfall/1.1.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-AhV9EIuOIvYM2XJFpYaEZCqcS4XUmNwsOfImZhzQQ4DTcYuJwJJAehQn6eaCfu3uMPtwb6Ya6musAD7s4BkFZA==}
+    peerDependencies:
+      react: ^16.8
+      react-dom: ^16.8
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-fast-compare: 3.2.0
     dev: false
 
   /react-style-singleton/2.1.1_74cdfb704b70bfbe5b519e0c4564d995:

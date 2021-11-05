@@ -11,7 +11,6 @@ import {
 export default function Cta() {
   return (
     <Flex
-      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={50}
       w="full"
       alignItems="center"
