@@ -8,23 +8,20 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-const Card = () => {
+const Card = ({
+  imageSrc,
+  title,
+  review,
+  author,
+}: {
+  imageSrc: string;
+  title: string;
+  review: string;
+  author: string;
+}) => {
   return (
-    <Flex
-      p={50}
-      w="full"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Box
-        w="md"
-        mx="auto"
-        py={4}
-        px={8}
-        bg={useColorModeValue("white", "gray.800")}
-        shadow="lg"
-        rounded="lg"
-      >
+    <Flex p={50} w="full" alignItems="center" justifyContent="center">
+      <Box w="md" mx="auto" py={4} px={8} bg="white" shadow="lg" rounded="lg">
         <Flex justifyContent={{ base: "center", md: "end" }} mt={-16}>
           <Image
             w={20}
@@ -33,34 +30,29 @@ const Card = () => {
             rounded="full"
             borderStyle="solid"
             borderWidth={2}
-            borderColor={useColorModeValue("brand.500", "brand.400")}
+            borderColor="brand.500"
             alt="Testimonial avatar"
-            src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
+            src={imageSrc}
           />
         </Flex>
 
         <chakra.h2
-          color={useColorModeValue("gray.800", "white")}
+          color="gray.800"
           fontSize={{ base: "2xl", md: "3xl" }}
           mt={{ base: 2, md: 0 }}
           fontWeight="bold"
         >
-          Design Tools
+          {title}
         </chakra.h2>
 
-        <chakra.p mt={2} color={useColorModeValue("gray.600", "gray.200")}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
-          deserunt ea doloremque natus error, rerum quas odio quaerat nam ex
-          commodi hic, suscipit in a veritatis pariatur minus consequuntur!
+        <chakra.p mt={2} color="gray.600">
+          {review}
         </chakra.p>
 
         <Flex justifyContent="end" mt={4}>
-          <Link
-            fontSize="xl"
-            color={useColorModeValue("brand.500", "brand.300")}
-          >
-            John Doe
-          </Link>
+          <chakra.p fontSize="xl" color="brand.500">
+            {author}
+          </chakra.p>
         </Flex>
       </Box>
     </Flex>

@@ -5,21 +5,22 @@ import { Box, Stack, Button } from "@chakra-ui/react";
 const MenuItem = ({
   children,
   to = "/",
-  ...rest
+  onClick,
 }: {
   children: string;
   to: string;
+  onClick: any;
 }) => {
   return (
     <NextLink href={to} passHref>
-      <Button as="a" variant="ghost" aria-label={children} {...rest}>
+      <Button as="a" variant="ghost" aria-label={children} onClick={onClick}>
         {children}
       </Button>
     </NextLink>
   );
 };
 
-const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
+const MenuLinks = ({ isOpen, toggle }: { isOpen: boolean; toggle: any }) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -32,10 +33,18 @@ const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">Inicio</MenuItem>
-        <MenuItem to="/empresa">Empresa</MenuItem>
-        <MenuItem to="/productos">Productos</MenuItem>
-        <MenuItem to="/contacto">Contacto</MenuItem>
+        <MenuItem to="/" onClick={toggle}>
+          Inicio
+        </MenuItem>
+        <MenuItem to="/empresa" onClick={toggle}>
+          Empresa
+        </MenuItem>
+        <MenuItem to="/productos" onClick={toggle}>
+          Productos
+        </MenuItem>
+        <MenuItem to="/contacto" onClick={toggle}>
+          Contacto
+        </MenuItem>
       </Stack>
     </Box>
   );

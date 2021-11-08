@@ -142,7 +142,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 fontWeight="extrabold"
                 letterSpacing="tight"
                 textAlign={{ base: "center", md: "left" }}
-                color="gray.600"
                 lineHeight={{ md: "shorter" }}
               >
                 Postres
@@ -150,7 +149,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
-                color="gray.600"
                 fontSize={{ md: "lg" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -199,7 +197,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 fontWeight="extrabold"
                 letterSpacing="tight"
                 textAlign={{ base: "center", md: "left" }}
-                color="gray.900"
                 lineHeight={{ md: "shorter" }}
               >
                 Verduras
@@ -207,7 +204,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
-                color="gray.600"
                 fontSize={{ md: "lg" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

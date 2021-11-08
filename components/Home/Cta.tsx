@@ -1,22 +1,11 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Flex,
-  useColorModeValue,
-  Stack,
-  Link,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, Button } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function Cta() {
   return (
-    <Flex
-      p={50}
-      w="full"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Box bg={useColorModeValue("gray.50", "gray.800")}>
+    <Flex px={50} w="full" alignItems="center" justifyContent="center">
+      <Box bg="gray.50">
         <Box
           maxW="7xl"
           w={{ md: "3xl", lg: "4xl" }}
@@ -25,67 +14,39 @@ export default function Cta() {
           px={{ base: 4, lg: 8 }}
           display={{ lg: "flex" }}
           alignItems={{ lg: "center" }}
-          justifyContent={{ lg: "space-between" }}
+          justifyContent={{ lg: "space-around" }}
         >
           <chakra.h2
             fontSize={{ base: "3xl", sm: "4xl" }}
             fontWeight="extrabold"
             letterSpacing="tight"
             lineHeight="shorter"
-            color={useColorModeValue("gray.900", "gray.100")}
           >
-            <chakra.span display="block">Ready to dive in?</chakra.span>
-            <chakra.span
-              display="block"
-              color={useColorModeValue("brand.600", "gray.500")}
-            >
-              Start your free trial today.
+            <chakra.span display="block">¿Listo para probar?</chakra.span>
+            <chakra.span display="block" color="gray.600">
+              Mándanos un mensaje
             </chakra.span>
           </chakra.h2>
-          <Stack
-            direction={{ base: "column", sm: "row" }}
-            mt={{ base: 8, lg: 0 }}
-            shrink={{ lg: 0 }}
-          >
-            <Link
-              w={["full", "auto"]}
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              px={5}
-              py={3}
-              border="solid transparent"
-              fontWeight="bold"
-              rounded="md"
-              shadow="md"
-              color="white"
-              bg={useColorModeValue("brand.600", "brand.500")}
-              _hover={{
-                bg: useColorModeValue("brand.700", "brand.600"),
-              }}
-            >
-              Get started
-            </Link>
-            <Link
-              w={["full", "auto"]}
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              px={5}
-              py={3}
-              border="solid transparent"
-              fontWeight="bold"
-              rounded="md"
-              shadow="md"
-              color="brand.600"
-              bg="white"
-              _hover={{
-                bg: "brand.50",
-              }}
-            >
-              Learn More
-            </Link>
-          </Stack>
+          <Flex py={8}>
+            <NextLink href="/contacto" passHref>
+              <Button
+                as="a"
+                px={5}
+                py={5}
+                border="solid transparent"
+                fontWeight="bold"
+                rounded="md"
+                shadow="md"
+                color="brand.600"
+                bg="white"
+                _hover={{
+                  bg: "brand.50",
+                }}
+              >
+                Contactar
+              </Button>
+            </NextLink>
+          </Flex>
         </Box>
       </Box>
     </Flex>
