@@ -19,19 +19,46 @@ export default function Hero() {
       <ParallaxBanner
         layers={[
           {
-            image: "img/hero/back_faded.png",
             amount: 0.4,
             expanded: false,
+            children: (
+              <Image
+                src="/img/hero/back_faded.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                priority={true}
+              />
+            ),
           },
           {
-            image: "img/hero/middle.png",
             amount: 0.3,
             expanded: false,
+            children: (
+              <Image
+                src="/img/hero/middle.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                priority={true}
+              />
+            ),
           },
           {
-            image: "img/hero/front.png",
             amount: 0.1,
             expanded: false,
+            children: (
+              <Image
+                src="/img/hero/front.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                priority={true}
+              />
+            ),
           },
         ]}
         style={{
