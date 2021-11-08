@@ -95,7 +95,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 fontWeight="extrabold"
                 letterSpacing="tight"
                 textAlign={{ base: "center", md: "left" }}
-                color={useColorModeValue("gray.900", "gray.400")}
                 lineHeight={{ md: "shorter" }}
               >
                 Carnes
@@ -103,7 +102,6 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
-                color={useColorModeValue("gray.600", "gray.400")}
                 fontSize={{ md: "lg" }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
@@ -144,7 +142,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 fontWeight="extrabold"
                 letterSpacing="tight"
                 textAlign={{ base: "center", md: "left" }}
-                color={useColorModeValue("gray.900", "gray.400")}
+                color="gray.600"
                 lineHeight={{ md: "shorter" }}
               >
                 Postres
@@ -152,7 +150,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
-                color={useColorModeValue("gray.600", "gray.400")}
+                color="gray.600"
                 fontSize={{ md: "lg" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -201,7 +199,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
                 fontWeight="extrabold"
                 letterSpacing="tight"
                 textAlign={{ base: "center", md: "left" }}
-                color={useColorModeValue("gray.900", "gray.400")}
+                color="gray.900"
                 lineHeight={{ md: "shorter" }}
               >
                 Verduras
@@ -209,7 +207,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               <chakra.p
                 mb={5}
                 textAlign={{ base: "center", sm: "left" }}
-                color={useColorModeValue("gray.600", "gray.400")}
+                color="gray.600"
                 fontSize={{ md: "lg" }}
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
