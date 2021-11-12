@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavbarContainer from "./NavbarContainer";
-import Logo from "./Logo";
+import Logo from "../Common/Logo";
 import MenuToggle from "./MenuToggle";
 import MenuLinks from "./MenuLinks";
 

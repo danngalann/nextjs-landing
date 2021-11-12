@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "../components/Header/Navbar";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Head>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </ParallaxProvider>
     </ChakraProvider>
   );
