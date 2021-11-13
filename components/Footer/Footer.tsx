@@ -50,7 +50,7 @@ export default function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Legal</ListHeader>
             <NextLink href="/legal/cookies" passHref>
-              <Link>Cookies Policy</Link>
+              <Link>Política de Cookies</Link>
             </NextLink>
             <Link>Privacy Policy</Link>
             <Link>Terms of Service</Link>
