@@ -13,8 +13,18 @@ function MyApp({ Component, pageProps }: AppProps) {
           <title>Congelados Inserte</title>
           <meta
             name="description"
-            content="Empresa de congelados en granollers"
+            content="Productos congelados para todo tipo de empresas y negocios"
           />
+          <meta
+            property="og:title"
+            content="Productos congelados para todo tipo de empresas y negocios"
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:description"
+            content="Consigue productos congelados de calidad al mejor precio para tu negocio. Carnes, verduras, postres... Todo está a tu alcance."
+          />
+          <meta property="og:image" content="/img/hero/cold_mountain.jpg" />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <Navbar />
