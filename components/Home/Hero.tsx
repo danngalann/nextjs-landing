@@ -4,17 +4,17 @@ import { Box, chakra } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { ParallaxBanner } from "react-scroll-parallax";
 
-const Snowfall = dynamic(
-  () => {
-    return import("react-snowfall");
-  },
-  { ssr: false }
-);
+// const Snowfall = dynamic(
+//   () => {
+//     return import("react-snowfall");
+//   },
+//   { ssr: false }
+// );
 
 export default function Hero() {
   return (
     <chakra.div>
-      <Snowfall color="#E3F7FA" snowflakeCount={200} style={{ zIndex: 10 }} />
+      {/* <Snowfall color="#E3F7FA" snowflakeCount={200} style={{ zIndex: 10 }} /> */}
 
       <ParallaxBanner
         layers={[
