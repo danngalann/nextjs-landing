@@ -13,10 +13,6 @@ import Link from "next/link";
 import { isMobile } from "react-device-detect";
 import { Parallax } from "react-scroll-parallax";
 
-import carne from "../../public/img/carne.png";
-import postre from "../../public/img/postre.png";
-import verdura from "../../public/img/verdura.png";
-
 function SizedImage({
   src,
   lazy,
@@ -33,6 +29,7 @@ function SizedImage({
       <Image
         src={src}
         loading={lazy ? "lazy" : "eager"}
+        lazyBoundary="400px"
         alt=""
         layout="fill"
         objectFit="contain"
@@ -115,7 +112,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
           {isMobile ? null : (
             <Box w="full" h="full" display="flex" justifyContent="center">
               <SizedImage
-                src={carne.src}
+                src="v1637165535/inserte/carne_lmniu3.png"
                 width="35rem"
                 height="35rem"
                 lazy={lazyImages}
@@ -170,7 +167,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src={postre.src}
+                src="v1637165535/inserte/postre_op1fh6.png"
                 width="23rem"
                 height="23rem"
                 lazy={lazyImages}
@@ -225,7 +222,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src={verdura.src}
+                src="v1637164784/inserte/verdura_exthfh.png"
                 width="30rem"
                 height="30rem"
                 lazy={lazyImages}

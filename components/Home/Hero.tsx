@@ -4,10 +4,6 @@ import { Box, chakra } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { ParallaxBanner } from "react-scroll-parallax";
 
-import backImage from '../../public/img/hero/back_faded.png';
-import middleImage from '../../public/img/hero/middle.png';
-import frontImage from '../../public/img/hero/front.png';
-
 const Snowfall = dynamic(
   () => {
     return import("react-snowfall");
@@ -27,7 +23,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src={backImage.src}
+                src="v1637164782/inserte/hero/back_faded_kco4jr.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -41,7 +37,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src={middleImage.src}
+                src="v1637164784/inserte/hero/middle_qlix8m.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -55,7 +51,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src={frontImage.src}
+                src="v1637164781/inserte/hero/front_x7eahl.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"
