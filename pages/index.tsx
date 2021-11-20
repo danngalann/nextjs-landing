@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Hero />
-      <Box px={{ base: "none", md: 20 }} pt={10} w="full" bg={"gray.50"}>
+      <Box px={{ base: "none", md: 20 }} pt={10} w="full" bg="gray.50">
         {/* <Carousel media={media} mediaByIndex={mediaByIndex} /> */}
         <Awm />
         <Heading w="full" textAlign="center">
