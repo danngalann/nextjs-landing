@@ -5,6 +5,7 @@ import {
   Text,
   Flex,
   Link,
+  Tag,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
@@ -32,20 +33,44 @@ export default function Footer() {
         >
           <Stack align={"flex-start"}>
             <ListHeader>Productos</ListHeader>
-            <NextLink href="#!" passHref>
-              <Link>Todo</Link>
-            </NextLink>
-            <Link>Pescado</Link>
-            <Link>Carnes</Link>
-            <Link>Postres</Link>
+            <Link href="http://shop.inserte.com/shop/">Todo</Link>
+            <Link href="http://shop.inserte.com/product-category/productos-de-mar/">
+              Pescado
+            </Link>
+            <Flex>
+              <Text color="gray.400">Carnes</Text>
+              <Tag
+                size={"sm"}
+                bg="green.300"
+                ml={2}
+                color={"white"}
+              >
+                Próximamente
+              </Tag>
+            </Flex>
+            <Flex>
+              <Text color="gray.400">Postres</Text>
+              <Tag
+                size={"sm"}
+                bg="green.300"
+                ml={2}
+                color={"white"}
+              >
+                Próximamente
+              </Tag>
+            </Flex>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Empresa</ListHeader>
-            <Link>Sobre nosotros</Link>
-            <Link>Press</Link>
-            <Link>Careers</Link>
-            <Link>Contact Us</Link>
-            <Link>Partners</Link>
+            <NextLink href="/" passHref>
+              <Link>Inicio</Link>
+            </NextLink>
+            <NextLink href="/empresa" passHref>
+              <Link>Sobre nosotros</Link>
+            </NextLink>
+            <NextLink href="/contacto" passHref>
+              <Link>Contacto</Link>
+            </NextLink>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Legal</ListHeader>
