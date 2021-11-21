@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Congelados Inserte</title>
+        <title>NextJs Food</title>
         <meta
           name="description"
           content="Empresa de congelados en granollers"

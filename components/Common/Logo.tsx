@@ -7,10 +7,11 @@ export default function Logo(props: object) {
   return (
     <Box {...props}>
       <NextLink href="/">
-        <Box cursor="pointer" width="12rem" height="3rem" position="relative">
+        <Box cursor="pointer" width="12rem" height="6rem" position="relative">
           <Image
-            src="v1637164784/inserte/logo_ksjafb.png"
-            alt="Logo inserte"
+            src="v1637492893/nextjs/logo_vttv7p.png"
+            sizes="50vw"
+            alt="Logo"
             layout="fill"
             objectFit="contain"
           />

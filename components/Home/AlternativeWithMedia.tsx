@@ -112,7 +112,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
           {isMobile ? null : (
             <Box w="full" h="full" display="flex" justifyContent="center">
               <SizedImage
-                src="v1637165535/inserte/carne_lmniu3.png"
+                src="v1637165535/nextjs/carne_lmniu3.png"
                 width="35rem"
                 height="35rem"
                 lazy={lazyImages}
@@ -167,7 +167,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src="v1637165535/inserte/postre_op1fh6.png"
+                src="v1637165535/nextjs/postre_op1fh6.png"
                 width="23rem"
                 height="23rem"
                 lazy={lazyImages}
@@ -222,7 +222,7 @@ export default function Awm({ lazyImages = true }: { lazyImages?: boolean }) {
               position="relative"
             >
               <SizedImage
-                src="v1637164784/inserte/verdura_exthfh.png"
+                src="v1637164784/nextjs/verdura_exthfh.png"
                 width="30rem"
                 height="30rem"
                 lazy={lazyImages}

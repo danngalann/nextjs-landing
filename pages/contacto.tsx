@@ -47,19 +47,18 @@ export default function contact() {
               <VStack pl={0} spacing={3} alignItems="flex-start">
                 <Box>
                   <Icon as={MdPhone} mr={2} />
-                  <Link href="tel:938495572">93 849 55 72</Link>
+                  <Link href="tel:645325697">645325697</Link>
                 </Box>
                 <Box>
                   <Icon as={MdEmail} mr={2} />
-                  <Link href="mailto:inserte@inserte.com">
-                    inserte@inserte.com{" "}
+                  <Link href="mailto:atencion@example.com">
+                  atencion@example.com
                   </Link>
                 </Box>
                 <Flex>
                   <Icon as={MdLocationOn} mr={2} />
                   <Text>
-                    Avenida Europa, 31 Polígono Ind Palou Nord · 08401
-                    Granollers
+                    Calle del Peregrino 7, Cittàgazze
                   </Text>
                 </Flex>
               </VStack>

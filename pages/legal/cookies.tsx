@@ -15,9 +15,14 @@ const Cookies: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Congelados Inserte - Política de cookies</title>
+        <title>NextJsFood - Política de cookies</title>
       </Head>
-      <Box px={{ base: 8, md: 40, lg: 60 }} pt={10} w="full" textAlign="justify">
+      <Box
+        px={{ base: 8, md: 40, lg: 60 }}
+        pt={10}
+        w="full"
+        textAlign="justify"
+      >
         <Box mb={20}>
           <Heading as="h1" mb={4}>
             Política de cookies
@@ -27,39 +32,37 @@ const Cookies: NextPage = () => {
           <Heading as="h2" size="md" mb={4}>
             Responsable del tratamiento
           </Heading>
-          <Text>CONGELADOS INSERTE, S.L.</Text>
+          <Text>Lorem ipsum dolor sit amet.</Text>
+          <Text>Calle del Peregrino 7, Cittàgazze</Text>
+          <Text>NIF: 07624754R</Text>
+          <Text>Teléfono: 645325697</Text>
+          <Text mb={8}>Correo electrónico: cookies@example.com</Text>
+          <Text mb={4}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            quasi recusandae. Tenetur veritatis aliquam aspernatur eum sint
+            impedit voluptatum ea doloribus, atque suscipit sequi id in minima
+            perferendis totam asperiores eos laudantium, similique quasi!
+            Placeat unde fugiat in impedit magni.
+          </Text>
+          <Text mb={4}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            nobis laboriosam quo unde dolorum illum ducimus dicta sapiente id,
+            obcaecati officiis numquam sunt est voluptates eum ipsa, excepturi
+            nesciunt at, aperiam nostrum! Obcaecati beatae qui quos vel, sed
+            harum maxime.
+          </Text>
+          <Text mb={4}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+            eaque, vel dolore iusto nostrum sed optio quidem officia, numquam
+            possimus, magnam laudantium odit repudiandae ipsam at laboriosam.
+            Placeat, nostrum modi.
+          </Text>
           <Text>
-            Avenida Europa, 31 Polígono Ind Palou Nord · 08401 Granollers
-          </Text>
-          <Text>NIF: B-08898595</Text>
-          <Text>Teléfono: 93 849 55 72</Text>
-          <Text mb={8}>Correo electrónico: inserte@inserte.com</Text>
-          <Text mb={4}>
-            En la presente política de cookies, encontrará la descripción y
-            finalidad de cada una de las cookies utilizadas, así como su nombre,
-            el servidor de envío, su caducidad y en algunos casos la existencia
-            de transferencia internacional de datos.
-          </Text>
-          <Text mb={4}>
-            La legitimación para el uso de las cookies estrictamente
-            funcionales, viene dada por que el tratamiento es necesario para el
-            cumplimiento de una obligación legal, conforme la ley 34/2002 (Ley
-            de Servicios de la Sociedad de la Información y de Comercio
-            Electrónico).
-          </Text>
-          <Text mb={4}>
-            La legitimación para el uso de las cookies con fines analíticos, de
-            optimización, de personalización, de publicidad comportamental y
-            valoración, está basado en el consentimiento que se le ha
-            solicitado, conforme al Art. 6.1.a) del Reglamento (UE) 2016/679.
-          </Text>
-          <Text>
-            Utilizamos cookies con el objetivo de prestar un mejor servicio y
-            proporcionarte una mejor experiencia en tu navegación. Queremos
-            informarte de manera clara y precisa sobre las cookies que
-            utilizamos, detallando a continuación, qué es una cookie, para qué
-            sirve, qué tipos de cookies utilizamos, cuáles son su finalidad y
-            cómo puedes configurarlas o deshabilitarlas si así lo deseas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            asperiores sapiente error fuga, voluptas soluta repudiandae quod
+            unde alias, quibusdam distinctio reprehenderit, atque excepturi
+            assumenda numquam rerum facilis blanditiis tenetur ea illum! Atque
+            maxime voluptatibus provident quis consequatur?
           </Text>
         </Box>
         <Box mb={20}>
@@ -67,41 +70,45 @@ const Cookies: NextPage = () => {
             ¿Qué son las Cookies?
           </Heading>
           <Text>
-            Cookie es un fichero que se descarga en su ordenador al acceder a la
-            mayoría de las páginas Web. Las cookies permiten a una página web,
-            entre otras cosas, almacenar y recuperar información sobre los
-            hábitos de navegación de un usuario o de su equipo y, dependiendo de
-            la información que contengan y de la forma en que utilice su equipo,
-            pueden utilizarse para reconocer al usuario. Cuando acceda a una web
-            que utiliza cookies, la web hace que el navegador cree en su equipo
-            (ordenador, tableta, teléfono o similar) pequeños ficheros con
-            información necesaria para el funcionamiento de la Web. Estos
-            ficheros denominados cookies, forman parte de la tecnología
-            necesaria para el correcto funcionamiento del sitio web. Las cookies
-            no contienen ninguna clase de información personal específica, y la
-            mayoría de las mismas se borran del disco duro al finalizar la
-            sesión del navegador (las denominadas cookies de sesión) si bien su
-            historial de navegación y cookies se almacenan en su equipo. Las
-            cookies, de forma similar al historial de navegación o caché del
-            navegador, pueden dejar un rastro sobre su actividad en línea. Esto
-            es especialmente importante si otras personas pueden acceder a su
-            equipo. Por lo que en el caso de que esté utilizando un equipo
-            compartido, le recomendamos que antes de cerrar la sesión elimine la
-            información sobre el historial de navegación, caché y cookies.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            nihil ea culpa qui sint animi atque fugiat autem at ex consequatur
+            veniam non, ducimus quidem perspiciatis tempora assumenda
+            exercitationem. Dolores repudiandae reprehenderit velit odit
+            deleniti quasi quidem atque laudantium maiores, voluptatem iure eum
+            voluptate, tenetur facere quia. Aut sed obcaecati exercitationem
+            illum consequuntur deleniti, voluptates quis, officiis fugit, eius
+            placeat error! Itaque temporibus qui ullam quos quasi iste quae aut
+            tempore eius? Ullam aut blanditiis, nihil tenetur rerum non sunt?
           </Text>
         </Box>
         <Box mb={20}>
           <Heading as="h2" size="md" mb={4}>
             ¿Qué tipos de cookies utiliza esta página web?
           </Heading>
-          <Text>Ninguna. No usamos cookies en este dominio.</Text>
+          <Text>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+            adipisci consequatur, temporibus quae deleniti illo voluptas
+            deserunt officiis sunt, eum, exercitationem natus dicta! Neque
+            veniam, earum aliquid architecto consequatur deserunt incidunt
+            dolores dolore nobis debitis autem optio blanditiis iste ea
+            recusandae tempore magni? Alias ut facere pariatur excepturi eum
+            sint illum dolore amet quo, voluptatibus iusto inventore deserunt at
+            eius aliquam veniam cupiditate est, recusandae maxime temporibus eos
+            cumque doloremque dolor aperiam? Minima aperiam ducimus beatae iste
+            ullam asperiores et.
+          </Text>
         </Box>
         <Box mb={20}>
           <Heading as="h2" size="md" mb={4}>
             ¿Quién utiliza la información almacenada en las Cookies?
           </Heading>
           <Text>
-            Nadie. Al no haber cookies no se almacena ni se trata información.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus repellat harum explicabo repudiandae quibusdam et in
+            tempore pariatur laborum error cumque, ipsa excepturi dolore eaque
+            tempora alias. Suscipit totam porro quidem magnam vitae error itaque
+            recusandae, ex reprehenderit aliquid aliquam repudiandae molestiae
+            at accusantium, hic soluta. Deleniti quis corrupti dolore.
           </Text>
         </Box>
         <Box mb={20}>
@@ -109,7 +116,10 @@ const Cookies: NextPage = () => {
             ¿Durante cuánto tiempo mantendremos la información?
           </Heading>
           <Text>
-            Al no haber cookies no se almacena ni se trata información.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            incidunt dicta libero vitae voluptate eos deserunt aut laboriosam
+            distinctio velit, est, ducimus optio nam maiores, nisi voluptates
+            odit doloribus exercitationem.
           </Text>
         </Box>
         <Box mb={20}>
@@ -117,18 +127,17 @@ const Cookies: NextPage = () => {
             ¿Cómo puede desactivar las cookies?
           </Heading>
           <Text mb={4}>
-            En el panel de configuración de Cookies accesible en todo momento en
-            nuestra Plataforma podrás obtener toda la información sobre las
-            Cookies utilizadas en esta Web, junto con la información sobre el
-            propósito, duración y gestión (propia o por terceros) de cada una de
-            ellas, para que puedas gestionar la activación y desactivación del
-            uso de aquellas Cookies que no son estrictamente necesarias para el
-            funcionamiento de la Web.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            pariatur, beatae quaerat harum quidem similique reprehenderit
+            blanditiis cupiditate porro nihil incidunt sint ipsam error,
+            aliquid, delectus voluptatum deleniti illum. Sapiente, iste ratione
+            pariatur odio reprehenderit officiis provident magni minima vero.
           </Text>
           <Text mb={4}>
-            Alternativamente, en caso de que estés navegando por internet,
-            puedes deshabilitar en tu navegador el uso de Cookies. Te indicamos
-            la manera de realizarlo en los navegadores más populares:
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae libero
+            earum nostrum laudantium id beatae iure placeat sed, ad accusantium
+            reiciendis ipsam minus natus esse, mollitia obcaecati?
+            Necessitatibus?
           </Text>
           <List mb={4} ml={4}>
             <ListItem>
@@ -166,17 +175,17 @@ const Cookies: NextPage = () => {
             </ListItem>
           </List>
           <Text>
-            Esta posibilidad de evitar el uso de Cookies puede ser llevada a
-            cabo en cualquier momento.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            veritatis sequi itaque fugit sit maiores vero, dicta expedita
+            laboriosam obcaecati iure corporis quisquam eveniet iusto vel
+            aspernatur rerum cum perspiciatis!
           </Text>
           <Text>
-            Por favor, ten en cuenta que tanto tu gestión del panel de
-            configuración de Cookies, como tu opción de rechazar las Cookies es
-            específica para cada navegador que estés utilizando. Por lo tanto,
-            si optas por configurar las Cookies de una forma en un dispositivo y
-            deseas que tu opción se aplique de manera similar a otro
-            dispositivo, deberás activar la misma opción para ese otro
-            dispositivo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            adipisci corrupti amet officia fugiat error est facere asperiores
+            nisi eveniet assumenda ea, non ullam id quaerat veniam voluptate
+            voluptates omnis dolore neque animi dicta. Voluptates repellat omnis
+            voluptas placeat voluptatibus!
           </Text>
         </Box>
         <Box mb={20}>
@@ -184,12 +193,11 @@ const Cookies: NextPage = () => {
             Cambios en la Política de Cookies
           </Heading>
           <Text>
-            a presente Política de Cookies, se podrá modificar cuando así lo
-            exija la legislación vigente en cada momento o cuando hubiera alguna
-            variación en el tipo de cookies utilizadas en el sitio web. Por
-            ello, te recomendamos revisar esta política cada vez que accedas a
-            nuestro sitio web con el objetivo de estar adecuadamente informado
-            sobre cómo y para qué usamos las cookies.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            nemo sint error expedita rem, dolor maiores! Eius voluptas, ipsa
+            officia fugit nobis harum temporibus fugiat quidem delectus facere
+            impedit repellat, deserunt, eum corporis enim consequuntur. Quas
+            perspiciatis porro quae hic?
           </Text>
         </Box>
       </Box>

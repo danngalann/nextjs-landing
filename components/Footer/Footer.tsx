@@ -23,8 +23,8 @@ export default function Footer() {
       >
         <Stack alignItems={{base: "center", md:"flex-start"}} my={{base: 4, md: 0}}>
           <ListHeader>Productos</ListHeader>
-          <Link href="http://shop.inserte.com/shop/">Todo</Link>
-          <Link href="http://shop.inserte.com/product-category/productos-de-mar/">
+          <Link href="/productos">Todo</Link>
+          <Link href="/productos/pescado">
             Pescado
           </Link>
           <Flex>
@@ -84,7 +84,7 @@ export default function Footer() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © {new Date().getFullYear()} Congelados Inserte. Todos los derechos
+          © {new Date().getFullYear()} NextJs Food. Todos los derechos
           reservados.
         </Text>
       </Box>

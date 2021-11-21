@@ -23,7 +23,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src="v1637164782/inserte/hero/back_faded_kco4jr.png"
+                src="v1637164782/nextjs/hero/back_faded_kco4jr.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -37,7 +37,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src="v1637164784/inserte/hero/middle_qlix8m.png"
+                src="v1637164784/nextjs/hero/middle_qlix8m.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -51,7 +51,7 @@ export default function Hero() {
             expanded: false,
             children: (
               <Image
-                src="v1637164781/inserte/hero/front_x7eahl.png"
+                src="v1637164781/nextjs/hero/front_x7eahl.png"
                 alt=""
                 layout="fill"
                 objectFit="cover"

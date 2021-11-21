@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider>
       <ParallaxProvider>
         <Head>
-          <title>Congelados Inserte</title>
+          <title>NextJs Food</title>
           <meta
             name="description"
             content="Productos congelados para todo tipo de empresas y negocios"
