@@ -8,19 +8,19 @@ export default function Testimonials() {
       <Card
         title="Increíble experiencia"
         author="Mark Gills"
-        imageSrc="https://source.unsplash.com/collection/284790/70x70"
+        imageSrc="https://res.cloudinary.com/dyymism4o/image/upload/v1637491879/inserte/testimonials/man1_v9buxc.jpg"
         review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, maxime? Sed dolores exercitationem numquam aspernatur rem omnis! Totam, libero quae."
       />
       <Card
         title="Muy buen trato"
         author="Gemma Peterson"
-        imageSrc="https://source.unsplash.com/collection/772333/70x70"
+        imageSrc="https://res.cloudinary.com/dyymism4o/image/upload/v1637491879/inserte/testimonials/girl1_jr6qee.jpg"
         review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, maxime? Sed dolores exercitationem numquam aspernatur rem omnis! Totam, libero quae."
       />
       <Card
         title="Al gusto"
-        author="Leo Richards"
-        imageSrc="https://source.unsplash.com/collection/11540726/70x70"
+        author="Alice Grin"
+        imageSrc="https://res.cloudinary.com/dyymism4o/image/upload/v1637491879/inserte/testimonials/girl2_ucwwp6.jpg"
         review="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, maxime? Sed dolores exercitationem numquam aspernatur rem omnis! Totam, libero quae."
       />
     </Flex>
