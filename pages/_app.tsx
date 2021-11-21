@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             property="og:description"
             content="Consigue productos congelados de calidad al mejor precio para tu negocio. Carnes, verduras, postres... Todo está a tu alcance."
           />
-          <meta property="og:image" content="/img/hero/cold_mountain.jpg" />
+          <meta property="og:image" content="https://res.cloudinary.com/dyymism4o/image/upload/v1637164790/nextjs/hero/cold_mountain_iu0pfm.jpg" />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <Navbar />
